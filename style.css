@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  height: 100vh;
+  background: #dadada;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.5s;
+}
+.wrapper .image {
+  width: 22%;
+  height: 200px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.wrapper .image:hover img {
+  transform: scale(1.2);
+}
+
+.gallery {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transform: scale(0.8);
+  visibility: hidden;
+  transition: 0.5s;
+}
+.gallery .close {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  font-size: 35px;
+}
+.gallery .control {
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+}
+.gallery .control.prev {
+  left: 15px;
+}
+.gallery .control.next {
+  right: 15px;
+}
+.gallery__inner {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+
+.show {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.hide {
+  opacity: 0;
+}/*# sourceMappingURL=style.css.map */
