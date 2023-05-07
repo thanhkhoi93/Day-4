@@ -58,7 +58,9 @@ prev.addEventListener('click', () => {
 })
 
 gallery.addEventListener('click',(e)=>{
-    e.target.classList.remove('show');
+    console.log(e.target);
+    console.log(e.currentTarget);
+    e.currentTarget.classList.remove('show');
 })
 
 next.addEventListener('click', () => {
